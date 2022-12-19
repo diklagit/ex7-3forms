@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>employment form</title>
+    <link rel="stylesheet" href="employment.css" type="text/css" />
+  </head>
+
+  <body dir="rtl">
+    <form action="https://formspree.io/f/moqzaeew" method="post">
+      <header>
+        <h7>בס"ד</h7>
+
+        <div class="index">
+          <a href="index.html">עמוד ראשי</a>
+          <br />
+        </div>
+
+        <img
+          src="https://police.gov.il/join/images/giyusLogo.svg"
+          alt="department_taxes_authority"
+          width="60px"
+        />
+      </header>
+
+      <main>
+        <h1>בקשה לאישור העסקה</h1>
+
+        <div class="applicant-type">
+          <fieldset>
+            <legend>סוג הטופס</legend>
+
+            <div class="applicant-request">
+              <label for="the-applicant">מגיש הבקשה:</label>
+            </div>
+            <br />
+
+            <input
+              type="radio"
+              name="the-applicant"
+              value="בקשת מועמד בגיר"
+              id="adult-applicant-request"
+              checked
+            />
+            <label for="adult-applicant-request"
+              >בקשת מועמד בגיר לאישור העסקה</label
+            >
+
+            <input
+              type="radio"
+              name="the-applicant"
+              value="בקשת המעסיק"
+              id="employer-request"
+            />
+            <label for="employer-request">בקשת מעסיק לאישור העסקה</label>
+            <br />
+          </fieldset>
+        </div>
+
+        <fieldset>
+          <legend>פרטי המוסד</legend>
+          <br />
+
+          סוג המעסיק:
+          <select name="employer-type">
+            <option value="institution">מוסד</option>
+            <option value="government-office">משרד ממשלתי</option>
+            <option value="local-authority">רשות מקומית</option>
+            <option value="corporation">תאגיד</option>
+          </select>
+
+          <label for="employer-name">שם המעסיק:</label>
+          <input type="text" name="employer-name" id="employer-name" />
+
+          <label for="registration-number">מספר רישום:</label>
+          <input
+            type="number"
+            name="registration-number"
+            id="registration-number"
+          />
+          <br />
+          <br />
+
+          <label for="institution-name">שם המוסד:</label>
+          <input type="text" name="institution-name" id="institution-name" />
+
+          סוג המוסד:
+          <select name="institution-type">
+            <option value="hospital">בית חולים</option>
+            <option value="school">בית ספר</option>
+            <option value="kinder-garden">גן ילדים</option>
+            <option value="clinic">מרפאה</option>
+          </select>
+          <br />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>פרטים נוספים</legend>
+          <br />
+
+          <label for="phone-number">מספר טלפון:</label>
+          <input type="tel" name="phone-number" id="phone-number" />
+
+          <label for="user-email">אימייל:</label>
+          <input type="email" name="user-email" id="user-email" />
+          <br />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>פרטי הבגיר המועמד</legend>
+          <br />
+
+          <div class="applicant-basic">
+            <label for="id-number">מספר זהות:</label>
+            <input type="number" name="id-number" id="id-number" required />
+
+            <label for="first-name">שם פרטי:</label>
+            <input type="text" id="first-name" name="first-name" required />
+
+            <label for="last-name">שם משפחה:</label>
+            <input type="text" id="last-name" name="last-name" required />
+            <br />
+            <br />
+
+            <label for="date-of-birth">תאריך לידה:</label>
+            <input
+              type="date"
+              name="date-of-birth"
+              value="2022-12-12"
+              min="2004-01-01"
+              max="2050-01-30"
+              id="date-of-birth"
+              required
+            />
+
+            <label for="gender">מין:</label>
+
+            <input type="radio" name="gender" value="זכר" id="male" checked />
+            <label for="male">זכר</label>
+
+            <input type="radio" name="gender" value="נקבה" id="female" />
+            <label for="female">נקבה</label>
+            <br />
+            <br />
+          </div>
+
+          <label for="application-date">תאריך הגשת הבקשה:</label>
+          <input
+            type="date"
+            name="application-date"
+            id="application-date"
+            value="2022-12-12"
+            min="2022-12-12"
+            max="2050-12-31"
+          />
+          <br />
+        </fieldset>
+      </main>
+      <br />
+
+      <footer>
+        <button type="submit" value="שלח">שלח</button>
+        <button type="reset" value="clean">נקה</button>
+      </footer>
+    </form>
+  </body>
+</html>

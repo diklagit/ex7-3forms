@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>101form</title>
+    <link rel="stylesheet" href="101form.css" type="text/css" />
+  </head>
+
+  <body dir="rtl">
+    <form action="https://formspree.io/f/xwkzgzkb" method="post">
+      <header>
+        <h7>בס"ד</h7>
+
+        <div class="index">
+          <a href="index.html">עמוד ראשי</a>
+          <br />
+        </div>
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/he/thumb/c/cd/Rashut_HaMisim.svg/239px-Rashut_HaMisim.svg.png"
+          alt="department_taxes_authority"
+          width="60px"
+        />
+
+        <h1>טופס 101</h1>
+        <div class="form-description">
+          <h8> כרטיס עובד - ובקשה להקלה ולתיאום מס על ידי המעביד </h8>
+          <br />
+          <h8>לפי תקנות מס הכנסה (ניכוי ממשכורת ומשכר עבודה), התשנ"ג - 1993</h8>
+        </div>
+        <br />
+      </header>
+
+      <main>
+        <label for=" tax-year" style="font-weight: bold">שנת המס:</label>
+        <br />
+        2022
+        <input type="radio" name="tax-year" value="2022" id="2022" checked />
+        2023
+        <input type="radio" name="tax-year" value="2023" id="2023" />
+
+        <fieldset class="form-instructions">
+          <p>
+            טופס זה ימולא על-ידי כל עובד עם תחילת עבודתו, וכן בתחילת כל שנת מס
+            (אלא אם כן המנהל אישר אחרת). הטופס מהווה אסמכתא למעביד למתן הקלות
+            במס ולעריכת תיאומי מס בחישוב משכורת העובד. אם חל שינוי בפרטים - יש
+            להצהיר על כך תוך שבוע ימים.
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>א. פרטי המעביד</legend>
+
+          <label for="name">שם:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="adress">כתובת:</label>
+          <input type="text" id="adress" name="adress" />
+
+          <label for="phone-number">מספר טלפון:</label>
+          <input type="tel" id="phone-number" name="phone-number" />
+
+          <label for="t.d-file-number">מספר תיק ניכויים:</label>
+          <input type="number" id="t.d-file-number" name="t.d-file-number" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>ב. פרטי העובד/ת</legend>
+
+          <label for="first-name">שם פרטי:</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name">שם משפחה:</label>
+          <input type="text" id="last-name" name="last-name" required />
+          <br />
+          <br />
+
+          <label for="id.-by">זיהוי לפי:</label>
+          <br />
+          <label for="identification">תעודת זהות</label>
+          <input
+            type="radio"
+            name="id.-by"
+            value="תעודת-זהות"
+            id="identification"
+            checked
+          />
+          <labe for="passport">דרכון</labe>
+          <input type="radio" name="id.-by" value="דרכון" id="passport" />
+          <br />
+          <br />
+
+          <label for="id-number">מספר זהות:</label>
+          <input type="number" name="id-number" id="id-number" required />
+          צרף קבצים:
+          <input type="file" id="id-image" accept=".gif,.jpeg,.png,.jpg" />
+          <br />
+          <br />
+
+          <label for="date-of-birth">תאריך לידה:</label>
+          <input
+            type="date"
+            name="date-of-birth"
+            value="2022-12-12"
+            min="2004-01-01"
+            max="2050-01-30"
+            id="date-of-birth"
+            required
+          />
+
+          <label for="date-of-immigration">תאריך עליה:</label>
+          <input
+            type="date"
+            name="date-of-immigration"
+            value="2022-12-12"
+            min="1900-01-01"
+            max="2050-01-30"
+            id="date-of-immigration"
+          />
+          <br />
+          <br />
+
+          <label for="city">ישוב</label>
+          <input type="text" name="city" id="city" required />
+
+          <label for="neighborhood">רחוב</label>
+          <input type="text" name="neighborhood" id="neighborhood" required />
+
+          <label for="home-number">מספר בית</label>
+          <input type="number" name="home-number" id="home-number" required />
+
+          <label for="zip-code">מיקוד</label>
+          <input type="number" name="zip-code" id="zip-code" />
+          <br />
+          <br />
+
+          <label for="cell-number">מספר טלפון נייד</label>
+          <input type="tel" name="cell-number" id="cell-number" required />
+          <label for="phone-number">מספר טלפון</label>
+          <input type="tel" name="phone-number" id="phone-number" />
+          <br />
+          <br />
+
+          <label for="email-adress">אימייל:</label>
+          <input type="email" name="email-adress" id="email-adress" required />
+          <br />
+          <br />
+
+          <label for="gender">מין:</label>
+          <label for="male">זכר</label>
+          <input type="radio" name="gender" value="זכר" id="male" checked />
+          <label for="female">נקבה</label>
+          <input type="radio" name="gender" value="נקבה" id="female" />
+          <br />
+          <br />
+
+          <label for="family-status">מצב משפחתי:</label>
+          <label for="single">רווק/ה</label>
+          <input
+            type="radio"
+            name="family-status"
+            value="רווק/ה"
+            id="single"
+            checked
+          />
+          <label for="married">נשוי/אה</label>
+          <input
+            type="radio"
+            name="family-status"
+            value="נשוי/אה"
+            id="married"
+          />
+          <label for="divorced">גרוש/ה</label>
+          <input
+            type="radio"
+            name="family-status"
+            value="גרוש/ה"
+            id="divorced"
+          />
+          <label for="widow/er">אלמן/ה</label>
+          <input
+            type="radio"
+            name="family-status"
+            value="אלמן/ה"
+            id="widow/er"
+          />
+          <label for="separated">פרוד/ה</label>
+          <input
+            type="radio"
+            name="family-status"
+            value="פרוד/ה"
+            id="separated"
+          />
+          <br />
+          <br />
+
+          <label for="israeli-citizen">תושב ישראל:</label>
+          <label for="israeli-citizen-yes">כן</label>
+          <input
+            type="radio"
+            name="israeli-citizen"
+            value="כן"
+            id="israeli-citizen-yes"
+            checked
+          />
+          <label for="israeli-citizen-no">לא</label>
+          <input
+            type="radio"
+            name="israeli-citizen"
+            value="לא"
+            id="israeli-citizen-no"
+          />
+          <br />
+          <br />
+
+          <label for="kibbutz-or-collective-settlement"
+            >חבר קיבוץ/מושב שיתופי:</label
+          >
+          <label for="kibbutz-or-collective-settlement-yes">כן</label>
+          <input
+            type="radio"
+            name="kibbutz-or-collective-settlement"
+            value="כן"
+            id="kibbutz-or-collective-settlement-yes"
+            checked
+          />
+          <label for="kibbutz-or-collective-settlement-no">לא</label>
+          <input
+            type="radio"
+            name="kibbutz-or-collective-settlement"
+            value="לא"
+            id="kibbutz-or-collective-settlement-no"
+          />
+          <br />
+          <br />
+
+          <label for="health-fund-member">חבר בקופת חולים :</label>
+          <label for="health-fund-member-yes">כן</label>
+          <input
+            type="radio"
+            name="health-fund-member"
+            value="כן"
+            id="health-fund-member-yes"
+            checked
+          />
+          <label for="health-fund-member-no">לא</label>
+          <input
+            type="radio"
+            name="health-fund-member"
+            value="לא"
+            id="health-fund-member-no"
+          />
+          <br />
+          <br />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>ג. פרטים על ילדי שבשנת המס טרם מלאו להם 19 שנה</legend>
+          <label for="name">שם:</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="identification">תעודת זהות:</label>
+          <input type="number" name="identification" id="identification" />
+
+          <label for="date-of-birth-child">תאריך לידה:</label>
+          <input
+            type="date"
+            name="date-of-birth-child"
+            id="date-of-birth-child"
+            value="2022-12-12"
+            min="1900-01-01"
+            max="2050-01-30"
+          />
+          <br />
+          <br />
+
+          <label for="child-with-me">הילד נמצא בחזקתי</label>
+          <input type="checkbox" name="child-with-me" id="child-with-me" />
+
+          <label for="child-support"
+            >אני מקבל/ת בגינו/ה קצבת ילדים מביטוח לאומי</label
+          >
+          <input type="checkbox" name="child-support" id="child-support" />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>ד. פרטים על הכנסותי ממעביד זה</legend>
+          <span>אני מקבל/ת:</span>
+          <br />
+          <label for="monthly-salary">משכורת חודש</label>
+          <input
+            type="checkbox"
+            name="monthly-salary"
+            value="משכורת חודש"
+            id="monthly-salary"
+          />
+
+          <label for="additional-amployment">משכורת בעד משרה נוספת</label>
+          <input
+            type="checkbox"
+            name="additional-amployment"
+            value="משכורת בעד משרה נוספת"
+            id="additional-amployment"
+          />
+
+          <label for="partial-salary">משכורת חלקית</label>
+          <input
+            type="checkbox"
+            name="partial-salary"
+            value="משכורת חלקית"
+            id="partial-salary"
+          />
+          <br />
+          <br />
+
+          <label for="daily-pay">שכר עבודה (עובד יומי)</label>
+          <input
+            type="checkbox"
+            name="daily-pay"
+            value="שכר עבודה (עובד יומי)"
+            id="daily-pay"
+          />
+
+          <label for="allowance">קצבה</label>
+          <input type="checkbox" name="allowance" value="קצבה" id="allowance" />
+
+          <label for="scholarship">מלגה</label>
+          <input
+            type="checkbox"
+            name="scholarship"
+            value="מלגה"
+            id="scholarship"
+          />
+          <br />
+          <br />
+
+          <label for="start-work">תאריך תחילת העבודה בשנת המס:</label>
+          <input
+            type="date"
+            name="start-work"
+            id="start-work"
+            value="2022-12-12"
+            min="2022-1-1"
+            max="2023-12-31"
+          />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>ה. פרטים על הכנסות אחרות</legend>
+
+          <label for="other-incomes">יש לך הכנסות אחרות?</label>
+          <br />
+          <lable for="no-other-incomes"
+            >אין לי הכנסות אחרות ממשכורת (משכורת חודש, בעד משרה נוספת, משכורת
+            חלקית, שכר עבודה), מקצבה וממלגה</lable
+          >
+          <input
+            type="radio"
+            name="other-incomes"
+            value="אין הכנסות אחרות"
+            id="no-other-incomes"
+            checked
+          />
+          <label for="yes-other-incomes">יש לי הכנסות נוספות כמפורט להלן</label>
+          <input
+            type="radio"
+            name="other-incomes"
+            value="יש הכנסות אחרות"
+            id="yes-other-incomes"
+          />
+        </fieldset>
+        <br />
+        <br />
+
+        <fieldset>
+          <legend>ו. אני מבקש/ת פטור או זיכוי ממס מהסיבות הבאות</legend>
+          <label for="an-israeli-citizen">1. אני תושב/ת ישראל</label>
+          <input
+            type="checkbox"
+            name="an-israeli-citizen"
+            value="תושב/ת ישראל"
+            id="an-israeli-citizen"
+          />
+          <br />
+          <br />
+
+          <label for="disabled">2. אני נכה 100% / עיוור/ת לצמיתות</label>
+          <input type="checkbox" name="disabled" value="נכות" id="disabled" />
+          <br />
+          <br />
+
+          <label for="permanent-resident"
+            >3. אני תושב/ת קבוע/ה בישוב מזכה. אני ובני משפחתי מדרגה ראשונה,
+            מתגוררים ביישוב ואין לי "מרכז חיים" נוסף.</label
+          >
+          <input
+            type="checkbox"
+            name="permanent-resident"
+            value="תושב/ת קבוע/ה"
+            id="permanent-resident"
+          />
+          <br />
+          <br />
+
+          <label for="new-immigrant">4. אני עולה חדש/ה</label>
+          <input
+            type="checkbox"
+            name="new-immigrant"
+            value="עולה חדש"
+            id="new-immigrant"
+          />
+          <br />
+          <br />
+
+          <label for="no-incomes-to-spouse"
+            >5. בגין בן/בת זוגי המתגורר/ת עימי ואין לו/לה הכנסות בשנת המס</label
+          >
+          <input
+            type="checkbox"
+            name="no-incomes-to-spouse"
+            value="לבן/בת זוג אין הכנסות"
+            id="no-incomes-to-spouse"
+          />
+          <br />
+          <br />
+
+          <label for="one-parent-family"
+            >6. אני הורה במשפחה חד הורית החי בנפרד</label
+          >
+          <input
+            type="checkbox"
+            name="one-parent-family"
+            value="חד הורי"
+            id="one-parent-family"
+          />
+          <br />
+          <br />
+
+          <label for="custody-children"
+            >7. בגין ילדי שבחזקתי המפורטים בחלק ג</label
+          >
+          <input
+            type="checkbox"
+            name="custody-children"
+            value="ילדים"
+            id="custody-children"
+          />
+          <br />
+          <br />
+
+          <label for="toddlers">8. בגין ילדי הפעוטים</label>
+          <input
+            type="checkbox"
+            name="toddlers"
+            value="ילדים פעוטים"
+            id="toddlers"
+          />
+          <br />
+          <br />
+
+          <label for="single-parent"
+            >9. אני הורה יחיד לילדי שבחזקתי (המפורטים בסעיף 7 ו-8 לעיל).</label
+          >
+          <input
+            type="checkbox"
+            name="single-parent"
+            value="הורה יחיד"
+            id="single-parent"
+          />
+          <br />
+          <br />
+
+          <label for="children-not-custody"
+            >10. בגין ילדי שאינם בחזקתי המפורטים בחלק ג ואני משתתף/ת
+            בכלכלתם.</label
+          >
+          <input
+            type="checkbox"
+            name="children-not-custody"
+            value="ילדים שאינם בחזקתי"
+            id="children-not-custody"
+          />
+          <br />
+          <br />
+
+          <label for="disabled-child"
+            >11. אני הורה לילדים עם מוגבלות שטרם מלאו להם 19 שנים, בגינם אני
+            מקבל/ת גמלת ילד נכה מהמוסד לביטוח לאומי.</label
+          >
+          <input
+            type="checkbox"
+            name="disabled-child"
+            value="ילדים עם מוגבלות"
+            id="disabled-child"
+          />
+          <br />
+          <br />
+
+          <label for="alimony-payments"
+            >12. בגין מזונות לבן/בת זוגי לשעבר.</label
+          >
+          <input
+            type="checkbox"
+            name="alimony-payments"
+            value="מזונות"
+            id="alimony-payments"
+          />
+          <br />
+          <br />
+
+          <label for="age-16-to-18"
+            >13. מלאו לי או לבן/בת זוגי 16 שנים וטרם מלאו לי או לבן/בת זוגי 18
+            שנים בשנת המס.</label
+          >
+          <input
+            type="checkbox"
+            name="age-16-to-18"
+            value="גיל 16-18"
+            id="age-16-to-18"
+          />
+          <br />
+          <br />
+
+          <label for="demobilized-soldier-or-national-service"
+            >14. אני חייל/ת משוחרר/ת / שרתתי בשירות לאומי.</label
+          >
+          <input
+            type="checkbox"
+            name="demobilized-soldier-or-national-service"
+            value="חייל משוחרר/שירות לאומי"
+            id="demobilized-soldier-or-national-service"
+          />
+          <br />
+          <br />
+
+          <label for="complete-academy"
+            >15. בגין סיום לימודים לתואר אקדמי, סיום התמחות או סיום לימודי
+            מקצוע.</label
+          >
+          <input
+            type="checkbox"
+            name="complete-academy"
+            value="סיום לימודים"
+            id="complete-academy"
+          />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>ז. תיאום מס</legend>
+          <label for="tax-coordination">צירוף/עריכת תיאום מס</label>
+          <input
+            type="checkbox"
+            name="tax-coordination"
+            value="צירוף תיאום מס"
+            id="tax-coordination"
+          />
+          <br />
+          <br />
+
+          <label for="tax-coordination-request-cause">סיבת הבקשה:</label>
+          <br />
+
+          <label for="no-income-since-year-start"
+            >לא הייתה לי הכנסה מתחילת שנת המס הנוכחית עד לתחילת עבודתי אצל מעביד
+            זה.</label
+          >
+          <input
+            type="radio"
+            name="tax-coordination-request-cause"
+            value="אין הכנסה מתחילת שנת המס"
+            id="no-income-since-year-start"
+          />
+          <br />
+          <br />
+
+          <label for="additional-incomes"
+            >יש לי הכנסות נוספות ממשכורת כמפורט להלן.</label
+          >
+          <input
+            type="radio"
+            name="tax-coordination-request-cause"
+            value="הכנסות נוספות"
+            id="additional-incomes"
+          />
+          <br />
+          <br />
+
+          <label for="tax-coordination-approved"
+            >פקיד השומה אישר תיאום לפי אישור מצורף.</label
+          >
+          <input
+            type="radio"
+            name="tax-coordination-request-cause"
+            value="תיאום מס אושר"
+            id="tax-coordination-approved"
+          />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>ח. הצהרה</legend>
+          <p>
+            אני מצהיר/ה כי הפרטים שמסרתי בטופס זה הינם מלאים ונכונים. ידוע לי
+            שהשמטה או מסירת פרטים לא נכונים הינה עבירה על פקודת מס הכנסה. אני
+            מתחייב/ת להודיע למעביד על כל שינוי שיחול בפרטיי האישיים ובפרטים
+            דלעיל תוך שבוע ימים מתאריך השינוי.
+          </p>
+        </fieldset>
+        <br />
+      </main>
+
+      <footer>
+        <button type="submit" value="שלח">שלח</button>
+        <button type="reset" value="נקה">נקה</button>
+      </footer>
+    </form>
+  </body>
+</html>

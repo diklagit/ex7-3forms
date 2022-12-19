@@ -1,0 +1,34 @@
+body {
+  background-color: rgb(205, 240, 195);
+}
+
+.index {
+  direction: ltr;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(7, 7, 63);
+}
+
+.applicant-type {
+  margin: 2%;
+}
+
+.applicant-type .applicant-request {
+  color: rgb(141, 23, 106);
+}
+
+legend {
+  font-weight: bold;
+  color: rgb(15, 15, 68);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.applicant-basic {
+  color: rgb(90, 27, 8);
+}
+
+footer {
+  text-align: center;
+}

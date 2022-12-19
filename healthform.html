@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthform</title>
+    <link rel="stylesheet" href="healthform.css" type="text/css" />
+  </head>
+
+  <body dir="rtl">
+    <form action="https://formspree.io/f/mpzeawaq" method="post">
+      <header>
+        <h8>בס"ד</h8>
+
+        <div class="index">
+          <a href="index.html">עמוד ראשי</a>
+          <br />
+        </div>
+
+        <h1>טופס הצהרת בריאות</h1>
+
+        <p id="p1">
+          בעת פנייתך הראשונה ללשכות השירות לרשום ראשוני, תשאל/י אודות מצבך
+          הבריאותי. במידה והינך סובל/ת מבעיות בריאותיות תתבקש/י להציג מסמכים
+          מרופא מטפל לצורך הפנייתך לוועדה לבדיקת כושר. בוועדה יקבעו מהם מגבלותיך
+          הרפואיות לעניין הפניה לעבודה מתאימה.
+        </p>
+      </header>
+
+      <main>
+        <h3>פרטי המצהיר</h3>
+
+        <label for="basic-details">אני החתום מטה:</label>
+        <br />
+        <br />
+        <label for="first-name">שם פרטי</label>
+        <input type="text" name="basic-details" id="first-name" required />
+
+        <label for="last-name">שם משפחה</label>
+        <input type="text" name="basic-details" id="last-name" required />
+
+        <label for="identification-n">מספר תעודת זהות</label>
+        <input
+          type="number"
+          name="basic-details"
+          id="identification-n"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="residence">המתגורר ב:</label>
+        <label for="city">ישוב</label>
+        <input type="text" name="residence" id="city" required />
+
+        <label for="neighborhood">רחוב</label>
+        <input type="text" name="residence" id="neighborhood" required />
+
+        <label for="home-n">מס' בית</label>
+        <input type="number" name="residence" id="home-n" />
+
+        <label for="apartment-n">מס' דירה</label>
+        <input type="number" name="residence" id="apartment-n" />
+
+        <label for="zip-code">מס' מיקוד</label>
+        <input type="number" name="residence" id="zip-code" />
+        <br />
+        <br />
+        <label id="health-s" for="health-statement">הצהרת בריאות</label>
+        <br />
+        <br />
+
+        <input
+          type="radio"
+          name="health-statement"
+          id="no-Medical-restrictions"
+          value="אין הגבלות רפואיות"
+          checked
+        />
+        <label for="no-Medical-restrictions"
+          >אני כשיר לכל עבודה ולמיטב ידיעתי איני סובל ממגבלות רפואיות המונעות
+          ממני לעסוק בעבודות כלשהן.</label
+        >
+        <br />
+        <br />
+
+        <input
+          type="radio"
+          name="health-statement"
+          id="Medical-restrictions"
+          value="הגבלות רפואיות"
+        />
+        <label for="Medical-restrictions"
+          >אני סובל מבעיות רפואיות המגבילות את תפקודי כמפורט להלן:</label
+        >
+        <br />
+
+        <textarea name="Medical-restrictions" cols="50" rows="6"></textarea>
+        <br />
+        <br />
+
+        <p>
+          אני מתחייב בזאת להמציא ללשכת שירות התעסוקה, תוך שבעה ימים, מסמכים
+          רפואיים עדכניים המשקפים את המצב הבריאותי בדבר המגבלות הרפואיות התומכים
+          ומאמתים את המגבלות הנ"ל. ידוע לי כי מצבי הבריאותי כעולה מן המסמכים
+          שאמציא, ידון וייבדק על ידי ועדה לבדיקת כושר ואני מתחייב לפעול על פי
+          החלטתה ולהופיע בפניה במידה ואדרש. אני מצהיר בזאת כי הפרטים, שמולאו על
+          ידי כמפורט לעיל, נכונים ומדויקים והנני מתחייב להודיע ללשכה על כל שינוי
+          שיחול בהם. ידוע לי כי אהיה צפוי לעונשים הקבועים בחוק בגין מסירת פרטים
+          שאינם אמת .
+        </p>
+
+        <label for="cur-date">תאריך:</label>
+        <input
+          type="date"
+          name="cur-date"
+          id="cur-date"
+          value="2022-12-12"
+          min="2022-12-12"
+          max="2050-12-31"
+        />
+
+        <label for="f.name">שם פרטי:</label>
+        <input type="text" name="f.name" id="f.name" />
+
+        <label for="l.name">שם משפחה:</label>
+        <input type="text" name="l.name" id="l.name" />
+        <br />
+        <br />
+      </main>
+
+      <footer>
+        <button type="submit" value="שלח">שלח</button>
+        <button type="reset" value="clean">נקה</button>
+      </footer>
+    </form>
+  </body>
+</html>
